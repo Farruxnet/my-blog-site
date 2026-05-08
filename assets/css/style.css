@@ -69,12 +69,6 @@ header input[type="text"] {
 
 /* Mobile */
 
-#mobileMenu a {
-    font-size: 15.5px;
-    font-weight: 500;
-    line-height: 1.6;
-}
-
 #menuToggle {
     font-size: 1.8rem;
     line-height: 1;
@@ -285,7 +279,7 @@ main button {
 
 /* Copy button */
 
-.post-content pre button {
+.post-content pre .copy-code-button {
     position: absolute;
     top: 12px;
     right: 12px;
@@ -299,7 +293,7 @@ main button {
     transition: 0.2s ease;
 }
 
-.post-content pre button:hover {
+.post-content pre .copy-code-button:hover {
     background: #475569;
 }
 
@@ -378,6 +372,43 @@ footer a {
     font-size: 14px !important;
 }
 
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e2e8f0;
+    border-radius: 50%;
+    color: #475569;
+    transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.social-links a:hover,
+.social-links a:focus-visible {
+    color: #3f51b5;
+    border-color: #3f51b5;
+    background: #eef2ff;
+    outline: none;
+}
+
+.social-links i {
+    font-size: 18px;
+    line-height: 1;
+}
+
+.dark .social-links a {
+    border-color: #334155;
+    color: #cbd5e1;
+}
+
+.dark .social-links a:hover,
+.dark .social-links a:focus-visible {
+    color: #ffffff;
+    border-color: #818cf8;
+    background: #1e293b;
+}
+
 /* =========================
    MOBILE
 ========================= */
@@ -387,8 +418,7 @@ footer a {
         font-size: 1.1rem !important;
     }
 
-    header nav a,
-    #mobileMenu a {
+    header nav a {
         font-size: 15px !important;
     }
 

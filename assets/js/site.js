@@ -8,8 +8,19 @@ const menuToggle = document.getElementById("menuToggle");
 const siteMenu = document.getElementById("siteMenu");
 
 if (menuToggle && siteMenu) {
+    const setMenuState = (isOpen) => {
+        siteMenu.classList.toggle("hidden", !isOpen);
+        siteMenu.classList.toggle("flex", isOpen);
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+    };
+
     menuToggle.addEventListener("click", () => {
-        siteMenu.classList.toggle("hidden");
-        siteMenu.classList.toggle("flex");
+        setMenuState(siteMenu.classList.contains("hidden"));
+    });
+
+    window.addEventListener("resize", () => {
+        if (window.innerWidth >= 768) {
+            setMenuState(false);
+        }
     });
 }

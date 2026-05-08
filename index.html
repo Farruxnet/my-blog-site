@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Responsive Blog Clone</title>
+    <meta name="description" content="farruxnet.uz shaxsiy texnik blogi">
+    <title>farruxnet.uz - Blog</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -17,6 +18,7 @@
             }
         }
     </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="bg-white text-slate-800 dark:bg-slate-900 dark:text-white transition-colors duration-300">
@@ -55,7 +57,16 @@
                     placeholder="Search blog..."
                     class="hidden lg:block px-4 py-2 text-sm rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 outline-none focus:border-accent"
                 />
-                <button id="menuToggle" class="md:hidden text-2xl leading-none" aria-label="Toggle menu">☰</button>
+                <button
+                    id="menuToggle"
+                    class="md:hidden text-2xl leading-none"
+                    type="button"
+                    aria-label="Toggle menu"
+                    aria-controls="siteMenu"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
             </div>
 
         </div>
@@ -101,10 +112,16 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
         <p class="text-sm text-slate-500">© 2026 Blog Clone</p>
 
-        <div class="flex flex-wrap justify-center items-center gap-4 sm:gap-6 text-sm">
-            <a href="#" class="hover:text-accent">Telegram</a>
-            <a href="#" class="hover:text-accent">YouTube</a>
-            <a href="#" class="hover:text-accent">LinkedIn</a>
+        <div class="social-links flex flex-wrap justify-center items-center gap-3">
+            <a href="#" aria-label="Telegram">
+                <i class="fa-brands fa-telegram" aria-hidden="true"></i>
+            </a>
+            <a href="#" aria-label="YouTube">
+                <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
         </div>
     </div>
 </footer>
