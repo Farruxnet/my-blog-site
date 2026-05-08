@@ -21,7 +21,7 @@
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Cambria:300,300i,400,400i,700,700i%7CConsolas:400,400i,700,700i&display=fallback">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
 
 </head>
@@ -273,46 +273,7 @@ print(kvadrat(4))</code></pre>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
-<script>
-    const copyButtonLabel = "Nusxa";
-    let blocks = document.querySelectorAll("pre");
-
-    blocks.forEach((block) => {
-        if (navigator.clipboard) {
-            let button = document.createElement("button");
-            button.innerText = copyButtonLabel;
-            block.appendChild(button);
-            button.addEventListener("click", async () => {
-                await copyCode(block, button);
-            });
-        }
-    });
-
-    async function copyCode(block, button) {
-        let code = block.querySelector("code");
-        let text = code.innerText;
-        await navigator.clipboard.writeText(text);
-        button.innerText = "Bajarildi";
-        setTimeout(() => {
-            button.innerText = copyButtonLabel;
-        }, 700);
-    }
-</script>
-<script>
-    const root = document.documentElement;
-    if (localStorage.getItem('theme') === 'dark') {
-        root.classList.add('light');
-    }
-
-</script>
-<script>
-    const menuToggle = document.getElementById("menuToggle");
-    const siteMenu = document.getElementById("siteMenu");
-
-    menuToggle.addEventListener("click", () => {
-        siteMenu.classList.toggle("hidden");
-        siteMenu.classList.toggle("flex");
-    });
-</script>
+<script src="assets/js/code-copy.js"></script>
+<script src="assets/js/site.js"></script>
 </body>
 </html>
