@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360" role="img" aria-labelledby="title desc">
+  <title id="title">Markdown to HTML workflow</title>
+  <desc id="desc">Markdown source is converted by Python into semantic HTML and deployed as a static site.</desc>
+  <rect width="960" height="360" fill="#f8fafc"/>
+  <rect x="70" y="120" width="210" height="120" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <rect x="375" y="120" width="210" height="120" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <rect x="680" y="120" width="210" height="120" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <path d="M300 180h50" stroke="#3f51b5" stroke-width="5" stroke-linecap="round"/>
+  <path d="m342 166 18 14-18 14" fill="none" stroke="#3f51b5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M605 180h50" stroke="#3f51b5" stroke-width="5" stroke-linecap="round"/>
+  <path d="m647 166 18 14-18 14" fill="none" stroke="#3f51b5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="175" y="170" text-anchor="middle" font-family="Consolas, monospace" font-size="26" font-weight="700" fill="#0f172a">Markdown</text>
+  <text x="175" y="205" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#475569">content/*.md</text>
+  <text x="480" y="170" text-anchor="middle" font-family="Consolas, monospace" font-size="26" font-weight="700" fill="#0f172a">Python</text>
+  <text x="480" y="205" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#475569">converter</text>
+  <text x="785" y="170" text-anchor="middle" font-family="Consolas, monospace" font-size="26" font-weight="700" fill="#0f172a">HTML</text>
+  <text x="785" y="205" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#475569">static site</text>
+</svg>

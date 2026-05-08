@@ -364,6 +364,185 @@ main button {
 }
 
 /* =========================
+   STATIC PAGES
+========================= */
+
+.page-content {
+    min-height: calc(100vh - 145px);
+}
+
+.page-content h1 {
+    margin: 0 0 1rem;
+    color: #0f172a;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.page-content h2 {
+    margin: 0.7rem 0 0.45rem;
+    color: #0f172a;
+    font-size: 1.15rem;
+    line-height: 1.35;
+    font-weight: 700;
+}
+
+.page-content p {
+    margin: 1rem 0;
+    color: #475569;
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
+
+.page-eyebrow {
+    margin-bottom: 0.5rem !important;
+    color: #3f51b5 !important;
+    font-size: 0.85rem !important;
+    font-weight: 700;
+    line-height: 1.2 !important;
+    text-transform: uppercase;
+}
+
+.feature-list,
+.contact-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.feature-list div,
+.contact-methods a {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1.1rem;
+    background: #ffffff;
+}
+
+.feature-list i,
+.contact-methods i {
+    color: #3f51b5;
+    font-size: 1.25rem;
+}
+
+.feature-list p {
+    margin: 0;
+    font-size: 0.98rem;
+    line-height: 1.7;
+}
+
+.contact-methods a {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    color: #334155;
+    text-decoration: none;
+    transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.contact-methods a:hover,
+.contact-methods a:focus-visible {
+    color: #3f51b5;
+    border-color: #3f51b5;
+    background: #eef2ff;
+    outline: none;
+}
+
+.contact-methods strong {
+    display: block;
+    color: #0f172a;
+    font-size: 0.95rem;
+}
+
+.contact-form {
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.4rem;
+    color: #0f172a;
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 0.8rem 0.9rem;
+    background: #ffffff;
+    color: #0f172a;
+    font: inherit;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #3f51b5;
+    box-shadow: 0 0 0 3px rgba(63, 81, 181, 0.15);
+}
+
+.contact-form button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: fit-content;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem 1.2rem;
+    background: #3f51b5;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.contact-form button:hover,
+.contact-form button:focus-visible {
+    background: #303f9f;
+    outline: none;
+}
+
+.dark .page-content h1,
+.dark .page-content h2,
+.dark .contact-methods strong,
+.dark .contact-form label {
+    color: #ffffff;
+}
+
+.dark .page-content p {
+    color: #cbd5e1;
+}
+
+.dark .feature-list div,
+.dark .contact-methods a,
+.dark .contact-form input,
+.dark .contact-form textarea {
+    border-color: #334155;
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+.dark .contact-methods a {
+    color: #cbd5e1;
+}
+
+.dark .contact-methods a:hover,
+.dark .contact-methods a:focus-visible {
+    color: #ffffff;
+    border-color: #818cf8;
+    background: #1e293b;
+}
+
+/* =========================
    FOOTER
 ========================= */
 
